@@ -26,9 +26,13 @@ a:hover{
 	background: url(../images/landing3.png);
 	color: white;
 	z-index: 10;
-/*	text-shadow: 4px 4px grey;*/
 	background-size: cover;
-/*	color: #800000;*/
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 
 #landing-overlay {
@@ -44,14 +48,14 @@ a:hover{
 }
 
 #landing-container .landing-content{
-	position: absolute;
 	z-index: 30;
 	text-align: center;
+	width: 100%;
 }
 
 #landing-header{
-	top: 50%;
-	transform: translateY(-60%);
+	margin-top: auto;
+	padding-top: 15vh;
 }
 
 #heading-name{
@@ -65,8 +69,8 @@ a:hover{
 }
 
 #landing-footer{
-	bottom: 5vh;
-	padding-bottom: 10px;
+	margin-top: auto;
+	padding-bottom: 5vh;
 }
 
 #landing-footer span{
