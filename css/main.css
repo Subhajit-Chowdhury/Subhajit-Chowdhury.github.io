@@ -3,12 +3,16 @@
         src: url(../font/stix.ttf);
 }
 
-html{
+html, body {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+	width: 100%;
 }
 
 body{
 	font-family: "stix";
+	margin: 0;
+	padding: 0;
 }
 
 a{
@@ -110,13 +114,14 @@ a:hover{
 #side-nav{
 	height: 100vh;
 	top: 0;
-	padding-top: 30%;
-	width: 125%;
+	padding-top: 50px;
+	width: 100%;
 	box-shadow: 20px 0px 40px -15px rgb(0 64 128 / 7%);
+	background: white;
 }
 
 #main-content{
-	left: 20vw;
+	padding: 0 15px;
 }
 
 #about{
@@ -145,9 +150,8 @@ a:hover{
 
 /* ── SIDE NAV ────────────────────────────────────────── */
 .side-nav-element{
-	text-align: justify;
-	font-size: 1.5rem;
-	margin: 10px;
+	font-size: 1.2rem;
+	margin: 15px 0;
 	cursor: pointer;
 }
 
@@ -434,120 +438,141 @@ a:hover{
 @media (max-width: 992px) {
 	#side-nav {
 		height: auto;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding: 10px 0;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		position: static !important;
-		box-shadow: none;
+		position: sticky !important;
+		top: 0;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 		border-bottom: 1px solid #ddd;
 		background: white;
-		z-index: 100;
+		z-index: 1000;
 	}
 
 	.side-nav-picture {
-		display: none; /* Hide picture in mobile nav bar to save space */
+		display: none;
 	}
 
 	.side-nav-element {
-		font-size: 1.1rem;
-		margin: 5px 10px;
+		font-size: 0.95rem;
+		margin: 5px 8px;
+		flex: 1 1 auto;
 		text-align: center;
 	}
 
 	.side-nav-element .row {
-		display: block;
-		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.side-nav-element .col-3 {
-		display: inline-block;
-		width: auto;
-		margin-right: 5px;
+		width: 100%;
+		margin-bottom: 2px;
 	}
 
 	#main-content {
-		left: 0;
 		width: 100% !important;
 		padding: 0;
 	}
 
 	.main-content-element {
-		margin-top: 5vh;
-		padding: 15px;
+		margin-top: 2rem;
+		padding: 1rem;
 	}
 
 	.content-box {
-		margin-left: 0;
-		width: 100%;
-		padding: 15px;
+		width: 95%;
+		margin: 0 auto;
+		padding: 1rem;
 	}
 
 	.logo-container {
-		margin-bottom: 15px;
+		margin: 0 auto 1rem auto;
+	}
+
+	#contact-icons-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+		border-top: 1px solid #eee;
+	}
+
+	#contact-icons-container .col-4 {
+		width: auto;
+		flex: 0 0 auto;
+		margin: 0 10px;
 	}
 }
 
 /* ── RESPONSIVE: MOBILE (≤ 576px) ───────────────────── */
 @media (max-width: 576px) {
 	#heading-name {
-		font-size: clamp(2.2rem, 10vw, 3.5rem);
+		font-size: clamp(2.2rem, 12vw, 3.5rem);
 		letter-spacing: -1px;
 	}
 
 	#heading-title {
-		font-size: 1rem;
+		font-size: 0.9rem;
 		line-height: 1.4;
+		padding: 0 10px;
+	}
+
+	.side-nav-element {
+		font-size: 0.75rem;
+		margin: 5px 4px;
+	}
+
+	.side-nav-element i {
+		font-size: 1rem;
 	}
 
 	.main-content-element h1 {
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 	}
 
 	.skill-item {
-		flex: 0 0 calc(33.33% - 20px); /* 3 items per row on mobile */
-		padding: 10px 5px;
+		flex: 0 0 calc(33.33% - 10px);
+		padding: 8px 4px;
 	}
 
 	.skill-item img, .skill-item i {
-		height: 45px !important;
-		font-size: 45px !important;
+		height: 40px !important;
+		font-size: 40px !important;
 	}
 
 	#skills-container p {
-		font-size: 0.8rem;
+		font-size: 0.75rem;
 	}
 
 	.info-container h4 {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 
 	.info-container h5 {
-		font-size: 0.95rem;
+		font-size: 0.85rem;
 	}
 
-	.achievement-title {
-		font-size: 0.9rem;
-	}
-
-	.achievement-date {
-		font-size: 0.8rem;
+	.info-container li {
+		font-size: 0.85rem;
 	}
 
 	#footer h1 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 
 	.footer-icon-container {
-		width: 6rem;
-		height: 6rem;
+		width: 5rem;
+		height: 5rem;
 	}
 
 	#footer .icon {
-		font-size: 3.25rem;
+		font-size: 2.5rem;
 	}
 }
