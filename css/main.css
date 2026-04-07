@@ -1,0 +1,421 @@
+@font-face {
+        font-family: "stix";
+        src: url(../font/stix.ttf);
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: "stix";
+		scroll-snap-type: mandatory;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color: black;
+}
+
+#landing-container{
+	height: 100vh;
+	background: url(../images/landing3.jpg);
+	color: white;
+	z-index: 10;
+/*	text-shadow: 4px 4px grey;*/
+	background-size: cover;
+/*	color: #800000;*/
+}
+
+#landing-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#landing-container .landing-content{
+	position: absolute;
+	z-index: 30;
+	text-align: center;
+}
+
+#landing-header{
+	top: 10vh;
+}
+
+#heading-name{
+	font-size: 9.5rem;
+	padding-bottom: 15px;
+  margin-bottom: 5vh;
+}
+
+#heading-title{
+	font-size: 2rem;
+}
+
+#landing-footer{
+	bottom: 0;
+	padding-bottom: 10px;
+}
+
+#landing-footer span{
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+#landing-footer .fa-chevron-down{
+	font-size: 1.5rem;
+	animation: pulse-infinite 3.5s infinite;
+}
+
+#landing-footer .fa-chevron-down:hover{
+	animation: none;
+	cursor: pointer;
+}
+
+@keyframes pulse-infinite {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+  	transform: scale(1);
+  }
+}
+
+#details-container{
+	min-height: 100vh;
+	background-color: #f8f8f9;
+}
+
+#side-nav{
+	height: 100vh;
+	top: 0;
+	padding-top: 30%;
+	width: 125%;
+  box-shadow: 20px 0px 40px -15px rgb(0 64 128 / 7%);
+}
+
+#main-content{
+	left: 20vw;
+}
+
+#about{
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+#about p{
+	text-align: justify;
+}
+
+#hobbies h3{
+	  height: 2rem;
+}
+
+.hobby-icon{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.hobby-helper{
+	display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.side-nav-element{
+	text-align: justify;
+	font-size: 1.5rem;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.underbar{
+	width: 0;
+	border: 2px solid white;
+	padding:  0px;
+	height: 0px;
+	transition-duration: 1s;
+}
+
+.side-nav-element:hover .underbar{
+	width: 100%;
+	border: 2px solid black;
+}
+
+.side-nav-picture{
+	margin-bottom: 20%;
+	text-align: center;
+}
+
+.side-nav-picture h2{
+	font-size: 2.5rem;
+}
+.avatar{
+	border-radius: 100%;
+	width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
+.main-content-element{
+	font-size: 1.1rem;
+	text-align: center;
+	margin-top: 10vh;
+	padding: 25px;
+	min-height: 100vh;
+	scroll-snap-align: start;
+}
+
+.main-content-element h1{
+	margin-bottom: 30px;
+}
+
+.content-box{
+	  border-top: 1px solid #dcd9d9;
+    border-bottom: 1px solid #dcd9d9;
+    box-shadow: 0px 10px 40px -10px rgb(0 64 128 / 20%);
+    padding: 25px;
+    text-align: left;
+    margin-left: 2.5vw;
+}
+
+.logo-img{
+	border-radius: 100%;
+	width: 80px;
+	position: relative;
+	z-index: 2;
+}
+
+.logo-container{
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/*.logo-container:before{
+	content: "";
+  width: 0.2rem;
+  background-color: #f9873b;
+  position: absolute;
+  margin-left: 2%;
+  z-index: 1;
+  height: 100%;
+}
+
+.last-logo:before{
+	width: 0;
+	height: 0;
+}*/
+
+.info-container{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dcd9d9;
+}
+
+.last-container{
+	border-bottom:none;
+}
+
+#skills-container{
+	width: 60vw;
+}
+
+#skills-container i:hover{
+	color: #f9873b;
+  animation: pulse-infinite 0.5s 1;
+}
+
+#skills-container i{
+    font-size: 6.25rem;
+    margin-bottom: 0.75rem;
+}
+
+#skills-container i: hover{
+    font-size: 6.25rem;
+    margin-bottom: 0.75rem;
+}
+
+#skills-container p{
+	font-weight: bold;
+  font-size: 1.1rem;
+	color: #5a5a5a;
+}
+
+#footer{
+	background-color: #f9873b;
+	padding: 5vh;
+	color: white;
+	text-align: center;
+}
+
+#footer h1{
+	margin-bottom: 3rem;
+	font-size: 5rem;
+}
+
+.footer-icon-container{
+	background-color: rgba(0, 0, 0, 0.11);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: background-color 0.35s ease-in-out;
+}
+
+#footer .icon{
+  font-size: 4.25rem;
+}
+
+#linkedin:hover{
+ background-color: #688199;
+ cursor: pointer;
+}
+#footer a{
+	color: white;
+	text-decoration: none;
+}
+
+#footer p{
+	margin-top: 1.2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#copyright{
+	background-color: #3c3c3c;
+	color: white;
+	text-align: center;
+	padding: 2vh;
+}
+
+#uw-logo{
+  width: 135px;
+  margin-bottom: 25px;
+}
+
+#amazon-logo{
+	width: 110px;
+}
+
+#resume-container{
+	margin-top: 8vh;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#internship-about{
+	color: red;
+	opacity: 1;
+}
+
+#internship-nav{
+	color: red;
+	opacity: 0;
+}
+
+.contact-icon a{
+	font-size: 2rem;
+	color: black;
+	transition-duration: 0.5s;
+}
+
+.contact-icon a:hover{
+	font-size: 2.7rem;
+}
+
+#resume-icon{
+	width: 35px;
+	margin-top: -10px;
+	transition-duration: 0.5s;
+}
+
+#resume-icon:hover{
+	transform: scale(1.1);
+}
+
+#resume-button{
+	width: 50%;
+	border-radius: 25px;
+	border: 1px solid blue;
+	color: blue;
+	font-style: italic;
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+#achievements .container{
+	width: 80%;
+}
+
+.achievement-title{
+	text-align: left;
+}
+.achievement-date{
+	text-align: right;
+}
+.achievement-content{
+	text-align: left;
+}
+
+#love{
+	animation: pulse 1.5s infinite;
+}
+
+#landing-footer .fa-chevron-down:hover{
+	animation: none;
+	cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+  	opacity: 1;
+  }
+}

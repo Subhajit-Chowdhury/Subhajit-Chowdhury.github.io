@@ -1,49 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subhajit Chowdhury | Data Engineer</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <header class="bg-white shadow p-6">
-    <div class="max-w-4xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Subhajit Chowdhury</h1>
-      <nav>
-        <a href="#projects" class="ml-6 text-blue-600 hover:underline">Projects</a>
-        <a href="https://github.com/Subhajit-Chowdhury" class="ml-6 text-blue-600 hover:underline" target="_blank">GitHub</a>
-        <a href="mailto:er.subhajitchowdhury@gmail.com" class="ml-6 text-blue-600 hover:underline">Contact</a>
-      </nav>
-    </div>
-  </header>
+	<head>
+		<title>Subhajit Chowdhury's portfolio</title>
+    <meta name="author" content="Subhajit Chowdhury">
+    <meta name="description" content="Subhajit Chowdhury's personal portfolio. An overview of Subhajit's work history, education history, personal projects and technical skills.">
+    <meta name="keywords" content="Subhajit,Chowdhury,Portfolio,Personal,Data Engineer">
+    <meta property="og:title" content="Subhajit Chowdhury's Portfolio">
+    <meta property="og:description" content="Subhajit Chowdhury's Personal Website. An overview of Subhajit's education history, work history, personal projects and technical skills.">
+    <meta property="og:image" content="images/kriti.jpeg">
 
-  <main class="max-w-4xl mx-auto p-6">
-    <section class="mb-12">
-      <h2 class="text-xl font-semibold mb-2">About Me</h2>
-      <p>I’m a Data Engineer with 2.9+ years of experience in designing, developing, and optimizing ETL pipelines and data workflows. Skilled in Informatica, IICS, SQL, AWS, and cloud data solutions. Passionate about building scalable and efficient data systems.</p>
-    </section>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="icons/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 
-    <section id="projects" class="mb-12">
-      <h2 class="text-xl font-semibold mb-2">Featured Projects</h2>
-      <ul class="list-disc pl-6">
-        <li class="mb-4">
-          <strong>Data Pipeline Health Monitor</strong> – Real-time job tracking dashboard using Airflow + Streamlit. <a href="https://github.com/Subhajit-Chowdhury/pipeline-health-monitor" class="text-blue-600" target="_blank">View on GitHub</a>
-        </li>
-        <li class="mb-4">
-          <strong>Retail Sales Data Warehouse</strong> – Mini data warehouse project with AWS Glue, SQL, and Metabase. <a href="https://github.com/Subhajit-Chowdhury/retail-data-warehouse" class="text-blue-600" target="_blank">View on GitHub</a>
-        </li>
-      </ul>
-    </section>
+    <link rel=icon href=icons/favicon.ico>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row" id="landing-container">
+				<!-- <div id="landing-overlay"></div> -->
+				<div class="container landing-content" id="landing-header">
+					<h1 id="heading-name">Subhajit Chowdhury</h1>
+					<h3 id="heading-title">
+						<br>
+						Cloud Data Engineer <br>
+						AWS Certified Cloud Practitioner <br><br><br>
+<!-- 						Actively looking for ML/ Software Engineering positions in US -->
+					</h3>
+				</div>
+				<div class="container landing-content" id="landing-footer">
+					<div class="row"><span class="find-out" id="find-out-text">Learn more</span></div>
+					<div class="row"><i class="fas fa-chevron-down" id="landing-chevron"></i></div>
+				</div>
+			</div>
+			<div class="row" id="details-container">
+				<div class="col-2">
+					<div class="sticky-top" id="side-nav">
+						<div class="row side-nav-picture">
+							<img class="avatar" src="images/kriti.jpeg">
+							<h2>Subhajit Chowdhury</h2>
+						</div>
+						<a href="#about">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-user"></i></div>
+									<div class="col">About</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+						<a href="#experience">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-briefcase"></i></div>
+									<div class="col">Experience</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+						<a href="#education">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-graduation-cap"></i></div>
+									<div class="col">Education</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+						<a href="#projects">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-laptop-code"></i></div>
+									<div class="col">Projects</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+						<a href="#skills">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-chart-bar"></i></div>
+									<div class="col">Skills</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+						<a href="#achievements">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-trophy"></i></div>
+									<div class="col">Achievements</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+						<!-- <div class="row justify-content-center" id="resume-container">
+							<a href="images/kriti.jpeg" class="btn btn-lg" id="resume-button" target="_blank" download>
+								<img src="images/resume.svg" width="30">
+								<span>Resume<span>
+							</a>
+						</div> -->
+						<div class="row justify-content-center" id="resume-container">
+							<p id="internship-nav"><b>Actively looking for Cloud Data<br>Engineering positions </b></p>
+						</div>
+						<div class="row justify-content-center" id="contact-icons-container">
+							<div class="col-4 contact-icon">
+								<a href="Subhajit_Chowdhury_Data_Engineer_Resume.pdf" target="_blank">
+									<img id="resume-icon" src="images/resume.svg">
+								</a>
+							</div>
+							<div class="col-4 contact-icon">
+								<a href="mailto:er.subhajitchowdhury@gmail.com" target="_blank">
+									<i class="fas fa-envelope"></i>
+								</a>
+							</div>
+							<div class="col-4 contact-icon">
+								<a href="https://www.linkedin.com/in/subhajit00100/" target="_blank">
+									<i class="icon fab fa-linkedin"></i>
+								</a>
+							</div>
+							<div class="col-4 contact-icon">
+								<a href="https://github.com/Subhajit-Chowdhury" target="_blank">
+									<i class="icon fab fa-github"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col" id="main-content">
+						<div class="row main-content-element" id="about">
+							<h2>Hi, I'm Subhajit <span class="wave">👋🏻</span></h2>
 
-    <section class="mb-12">
-      <h2 class="text-xl font-semibold mb-2">Resume</h2>
-      <a href="https://github.com/Subhajit-Chowdhury/Subhajit-Chowdhury.github.io/blob/main/Subhajit_Chowdhury_Resume.pdf" class="text-blue-600 hover:underline" target="_blank">Download My Resume</a>
-    </section>
-  </main>
+							<p>Currently, I'm a Cloud-focused Data Engineer with <a href="https://www.tcs.com/">Tata Consultancy Services</a> in India. Prior to this, I completed my B.Tech in Computer Science from <a href="https://makautwb.ac.in/">MAKAUT</a>. <br>
+							My industry experience lies in designing, building, and maintaining production-grade ETL/ELT data pipelines on AWS.</p>
+							<br/>
+							<br/>
+							<div class="row" id="hobbies">
+								<div class="col-7">
+<!-- 									<p id="internship-about"><b>I’m actively looking for full-time ML/ Software Enginnering positions. </b></p> -->
+								</div>
+								<div class="col-1">
 
-  <footer class="bg-white border-t p-4 text-center text-sm">
-    &copy; 2025 Subhajit Chowdhury. Built with ❤️ using TailwindCSS.
-  </footer>
-</body>
+								</div>
+								<div class="col-4">
+									<h3>Hobbies</h3>
+									<div class="row">
+										<!-- Use existing icons but map them to Subhajit's hobbies -->
+										<div class="col hobby-icon"><span class="hobby-helper"></span><img src="icons/hobbies/books.png" width="55" title="Tech News"></div>
+										<div class="col hobby-icon"><span class="hobby-helper"></span><img src="icons/hobbies/keyboard.svg" width="50" title="Tech Events"></div>
+										<div class="col hobby-icon"><span class="hobby-helper"></span><img src="icons/hobbies/travel.svg" width="65" title="Documentaries"></div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="row main-content-element justify-content-center" id="experience">
+							<h1>Experience</h1>
+							<div class="col-10 content-box">
+								<div class="row">
+									<div class="col-2 logo-container">
+										<img class="logo-img" src="images/apple.png">
+									</div>
+									<div class="col info-container">
+										<div class="row">
+											<div class="col company-name"><h4>Tata Consultancy Services</h4></div>
+										</div>
+										<div class="row">
+											<div class="col company-name"><h5>System Engineer | Data Engineer, AWS Cloud</h5></div>
+											<div class="col-4"><h5>July 2022 - Present</h5></div>
+										</div>
+										<!-- Using exact list style as the reference site used in Education section -->
+										<li>Built and maintained 5+ production-grade AWS ETL/ELT pipelines (S3, Glue, EMR, Redshift, Athena) structured on a medallion architecture.</li>
+										<li>Implemented a metadata-driven ingestion framework using AWS Glue Crawlers.</li>
+										<li>Orchestrated batch ETL workflows using AWS Step Functions.</li>
+										<li>Developed SQL and PySpark transformations with incremental load logic.</li>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row main-content-element justify-content-center" id="education">
+							<h1>Education</h1>
+							<div class="col-10 content-box">
+								<div class="row">
+									<div class="col-2">
+										<div class="logo-container">
+											<img class="logo-img" id="uw-logo" src="images/uw.png">
+										</div>
+									</div>
+									<div class="col info-container last-container">
+										<div class="row">
+											<div class="col company-name"><h4>University – MAKAUT</h4></div>
+											<div class="col-4"><h5>2018 - 2022</h5></div>
+										</div>
+										<h5>Bachelor of Technology (B.Tech) in Computer Science and Engineering</h5>
+										<li>Relevant courses: Data Structures & Algorithms, Operating Systems, Database Management Systems</li>
+										<li>GPA: 8.90</li>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Restored Projects Section exactly how they would style it, mimicking Experience/Education blocks -->
+						<div class="row main-content-element justify-content-center" id="projects">
+							<h1>Projects</h1>
+							<div class="col-10 content-box">
+								<div class="row">
+									<div class="col-2 logo-container">
+										<img class="logo-img" src="images/amazon-logo.png">
+									</div>
+									<div class="col info-container">
+										<div class="row">
+											<div class="col company-name"><h4>Serverless Analytics ETL Pipeline</h4></div>
+											<div class="col-4"><h5>AWS S3, Glue, Athena</h5></div>
+										</div>
+										<li>Designed a fully serverless batch ETL pipeline using Amazon S3, AWS Glue (PySpark), and Crawlers.</li>
+										<li>Built a scalable data lake architecture with raw and curated layers (medallion-style).</li>
+										<li>Enabled serverless, cost-efficient analytics by integrating the Data Catalog with Athena and QuickSight.</li>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-2 logo-container last-logo">
+										<img class="logo-img" src="images/bits.png">
+									</div>
+									<div class="col info-container last-container">
+										<div class="row">
+											<div class="col company-name"><h4>Near-Real-Time Serverless ELT</h4></div>
+											<div class="col-4"><h5>AWS, Snowflake</h5></div>
+										</div>
+										<li>Built an event-driven ELT pipeline using EventBridge, DynamoDB, Lambda, S3, and Snowflake.</li>
+										<li>Implemented Snowflake Snowpipe for continuous, automated data ingestion from S3.</li>
+										<li>Applied ELT best practices by performing analytical transformations using Snowflake SQL.</li>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row main-content-element" id="skills">
+							<h1>Skills</h1>
+							<div class="container" id="skills-container">
+								<div class="row">
+									<div class="col-2">
+										<img src="icons/AWS-cloud.svg" height="65">
+										<p>AWS</p>
+									</div>
+									<div class="col-2">
+										<img src="icons/Python-logo-notext.svg" height="65">
+										<p>Python</p>
+									</div>
+									<div class="col-2">
+										<img src="icons/apache_spark-icon.svg" height="65">
+										<p>PySpark</p> 
+									</div>
+									<div class="col-2">
+										<img src="icons/sql-database.svg" height="65">
+										<p>SQL</p>
+									</div>
+									<div class="col-2">
+										<!-- Reusing the SVG icons to stay 100% true to original -->
+										<img src="icons/Git_icon.svg" height="65">
+										<p>Git</p>
+									</div>
+									<div class="col-2">
+										<img src="icons/Tensorflow_logo.svg" height="65">
+										<p>Airflow</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row main-content-element" id="achievements">
+							<h1>Achievements</h1>
+							<div class="container">
+								<div class="row">
+									<div class="col-9 achievement-title"><b>AWS Certified Cloud Practitioner</b></div>
+									<div class="col-3 achievement-date">July 2025</div>
+								</div>
+								<div class="row achievement-content">
+									<p>Validation Number: a6447414ae25419cba12941481cd10a2</p>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<!-- <div class="row" id="footer">
+				...
+			</div> -->
+			<div class="row" id="copyright">
+				<div class="col-2"></div>
+				<div class="col-8">Made with <span id="love">❤️</span> by <span id="footer-name">Subhajit Chowdhury </span></div>
+				<div class="col-2"><p>Last updated: April, 2026</p></div>
+			</div>
+
+			<div class="views">
+			</div>
+		</div>
+		<!-- JS -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src='js/main.js'></script>
+
+	</body>
 </html>
