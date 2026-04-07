@@ -57,16 +57,22 @@ a:hover{
 
 #heading-name{
 	font-size: clamp(2.8rem, 8vw, 7rem);
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	margin-bottom: 0;
 	line-height: 1.1;
 	word-break: break-word;
+	font-weight: 700;
+	letter-spacing: -2px;
+	text-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 #heading-title{
-	font-size: clamp(1rem, 2.5vw, 2rem);
+	font-size: clamp(1rem, 2vw, 1.8rem);
 	margin-bottom: 0;
-	line-height: 1.8;
+	line-height: 1.6;
+	font-weight: 300;
+	opacity: 0.9;
+	letter-spacing: 1px;
 }
 
 #landing-footer{
