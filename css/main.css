@@ -205,7 +205,9 @@ a:hover{
 
 .logo-img{
 	border-radius: 100%;
-	width: 80px;
+	width: 90px;
+	height: 90px;
+	object-fit: contain;
 	position: relative;
 	z-index: 2;
 }
@@ -218,6 +220,9 @@ a:hover{
   align-items: center;
   margin: auto;
   margin-top: 10px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  padding: 8px;
 }
 
 /*.logo-container:before{
@@ -245,23 +250,24 @@ a:hover{
 	border-bottom:none;
 }
 
-#skills-container{
-	width: 60vw;
+.skill-item{
+	text-align: center;
+	padding: 20px 10px;
 }
 
-#skills-container i:hover{
-	color: #f9873b;
-  animation: pulse-infinite 0.5s 1;
+.skill-item img{
+	display: block;
+	margin: 0 auto 10px auto;
 }
 
-#skills-container i{
-    font-size: 6.25rem;
-    margin-bottom: 0.75rem;
+.skill-item i{
+	display: block;
+	margin: 0 auto 10px auto;
 }
 
 #skills-container p{
 	font-weight: bold;
-  font-size: 1.1rem;
+	font-size: 1rem;
 	color: #5a5a5a;
 }
 
