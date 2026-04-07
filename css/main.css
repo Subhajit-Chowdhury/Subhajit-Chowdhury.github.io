@@ -65,6 +65,14 @@ a:hover{
 	font-size: 7rem;
 	padding-bottom: 15px;
   margin-bottom: 0;
+  display: inline-block;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  cursor: default;
+}
+
+#heading-name:hover{
+  transform: scale(1.08);
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
 }
 
 #heading-title{
