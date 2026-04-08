@@ -389,7 +389,8 @@ a:hover{
 }
 
 .contact-icon a:hover{
-	font-size: 2.7rem;
+	transform: scale(1.15);
+	color: #0077b5;
 }
 
 #resume-icon{
