@@ -109,6 +109,11 @@ a:hover{
 #details-container{
 	min-height: 100vh;
 	background-color: #f8f8f9;
+	overflow-x: hidden;
+}
+
+#details-container > .row {
+	margin: 0;
 }
 
 #side-nav{
@@ -127,6 +132,7 @@ a:hover{
 #about{
 	padding-left: 5vw;
 	padding-right: 5vw;
+	overflow-x: hidden;
 }
 
 #about p{
@@ -438,12 +444,14 @@ a:hover{
 @media (max-width: 992px) {
 	#side-nav {
 		height: auto;
-		padding: 10px 0;
+		padding: 10px 5px;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		justify-content: flex-start;
 		align-items: center;
 		position: sticky !important;
 		top: 0;
@@ -451,6 +459,10 @@ a:hover{
 		border-bottom: 1px solid #ddd;
 		background: white;
 		z-index: 1000;
+	}
+
+	#side-nav::-webkit-scrollbar {
+		display: none;
 	}
 
 	.side-nav-picture {
@@ -478,7 +490,7 @@ a:hover{
 
 	#main-content {
 		width: 100% !important;
-		padding: 0;
+		padding: 0 10px;
 	}
 
 	.main-content-element {
@@ -501,13 +513,18 @@ a:hover{
 		display: flex;
 		justify-content: center;
 		padding: 10px 0;
-		border-top: 1px solid #eee;
+		border-top: none;
+		margin-top: 0;
 	}
 
 	#contact-icons-container .col-4 {
 		width: auto;
 		flex: 0 0 auto;
-		margin: 0 10px;
+		margin: 0 8px;
+	}
+
+	#resume-container {
+		display: none; /* Hide internship text in nav on mobile */
 	}
 }
 
@@ -538,17 +555,18 @@ a:hover{
 	}
 
 	.skill-item {
-		flex: 0 0 calc(33.33% - 10px);
-		padding: 8px 4px;
+		flex: 0 0 calc(33.33% - 15px);
+		padding: 10px 5px;
+		margin-bottom: 10px;
 	}
 
 	.skill-item img, .skill-item i {
-		height: 40px !important;
-		font-size: 40px !important;
+		height: 45px !important;
+		font-size: 45px !important;
 	}
 
 	#skills-container p {
-		font-size: 0.75rem;
+		font-size: 0.8rem;
 	}
 
 	.info-container h4 {
