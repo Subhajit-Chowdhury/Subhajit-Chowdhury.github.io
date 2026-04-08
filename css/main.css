@@ -160,11 +160,13 @@ a:hover{
 /* ── SIDE NAV ────────────────────────────────────────── */
 .side-nav-element{
 	font-size: 1.1rem;
-	margin: 20px 0;
+	margin: 15px 0;
 	cursor: pointer;
-	display: flex;
+	display: flex !important;
+	flex-direction: row !important;
 	align-items: center;
 	transition: all 0.3s ease;
+	width: 100%;
 }
 
 .side-nav-element i {
