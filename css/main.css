@@ -123,9 +123,8 @@ a:hover{
 	width: 100%;
 	box-shadow: 20px 0px 40px -15px rgb(0 64 128 / 7%);
 	background: white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	padding-left: 1.5rem;
+	padding-right: 1rem;
 }
 
 #main-content{
@@ -160,9 +159,23 @@ a:hover{
 
 /* ── SIDE NAV ────────────────────────────────────────── */
 .side-nav-element{
-	font-size: 1.2rem;
-	margin: 15px 0;
+	font-size: 1.1rem;
+	margin: 20px 0;
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+
+.side-nav-element i {
+	width: 35px;
+	font-size: 1.3rem;
+	text-align: left;
+	color: #555;
+}
+
+.side-nav-element .col {
+	padding-left: 0;
 }
 
 .underbar{
