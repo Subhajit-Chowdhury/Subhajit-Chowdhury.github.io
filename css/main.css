@@ -176,13 +176,13 @@ a:hover{
 	color: #555;
 }
 
-.side-nav-element .col {
+.nav-label {
 	padding-left: 0;
 	display: inline-flex;
 	flex-direction: column;
 	align-items: flex-start;
 	width: auto;
-	max-width: 100%;
+	flex-shrink: 0;
 }
 
 .underbar{
@@ -223,10 +223,8 @@ a:hover{
 	text-align: center;
 	margin-top: 10vh;
 	padding: 25px;
-	padding: 25px;
 	min-height: auto;
 	padding-bottom: 5vh;
-	scroll-snap-align: start;
 }
 
 .main-content-element h1{
@@ -552,10 +550,24 @@ a:hover{
 	}
 
 	.side-nav-element {
-		font-size: 0.95rem;
-		margin: 5px 8px;
-		flex: 1 1 auto;
+		font-size: 0.9rem;
+		margin: 4px 6px;
+		flex: 0 0 auto;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center;
+		justify-content: center;
 		text-align: center;
+		gap: 3px;
+	}
+
+	.side-nav-element i {
+		width: auto;
+		margin: 0;
+	}
+
+	.nav-label {
+		align-items: center;   /* centre underbar under text in mobile */
 	}
 
 	.side-nav-element .row {
