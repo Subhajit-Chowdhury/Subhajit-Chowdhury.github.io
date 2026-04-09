@@ -284,6 +284,23 @@ a:hover{
 	border-bottom: 1px solid #dcd9d9;
 }
 
+/* Justify bullet points in experience / education */
+.info-container li {
+	text-align: justify;
+	padding-right: 0.5rem;
+}
+
+/* Projects: no logo column, so indent content to match
+   the ~col-lg-2 (16.67%) offset used in other sections */
+#projects .info-container {
+	padding-left: 1.5rem;
+}
+
+#projects .info-container li {
+	text-align: justify;
+	padding-right: 0.5rem;
+}
+
 .last-container{
 	border-bottom:none;
 }
@@ -467,9 +484,10 @@ a:hover{
 .project-summary {
 	margin-top: 8px;
 	margin-bottom: 6px;
+	margin-left: 0;
 	font-style: italic;
 	color: #444;
-	text-align: left;
+	text-align: justify;
 }
 
 .project-result {
