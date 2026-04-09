@@ -291,8 +291,8 @@ a:hover{
 }
 
 .section-list li {
-	text-align: justify;
-	padding-right: 0.4rem;   /* keeps right edge clean */
+	text-align: left;          /* consistent across local & GitHub Pages */
+	padding-right: 0.4rem;
 	margin-bottom: 4px;
 	line-height: 1.6;
 }
@@ -371,11 +371,17 @@ a:hover{
   font-weight: bold;
 }
 
-#copyright{
+#copyright {
 	background-color: #3c3c3c;
 	color: white;
 	text-align: center;
-	padding: 2vh;
+	padding: 2vh 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 4px 12px;
+	font-size: 0.9rem;
 }
 
 #uw-logo{
@@ -580,22 +586,11 @@ a:hover{
 	}
 
 	#contact-icons-container {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		padding: 10px 0;
-		border-top: none;
-		margin-top: 0;
-	}
-
-	#contact-icons-container .col-4 {
-		width: auto;
-		flex: 0 0 auto;
-		margin: 0 8px;
+		display: none; /* hidden in mobile nav bar — icons live in desktop side panel only */
 	}
 
 	#resume-container {
-		display: none; /* Hide internship text in nav on mobile */
+		display: none;
 	}
 }
 
