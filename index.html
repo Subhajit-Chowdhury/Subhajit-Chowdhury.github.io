@@ -127,7 +127,7 @@
 								</a>
 							</div>
 							<div class="col-4 contact-icon">
-								<a href="https://medium.com/@er.subhajitchowdhury" target="_blank">
+								<a href="https://medium.com/@subhajitchowdhury" target="_blank">
 									<i class="icon fab fa-medium"></i>
 								</a>
 							</div>
@@ -137,8 +137,9 @@
 				<div class="col-lg-10 col-md-12" id="main-content">
 						<div class="row main-content-element" id="about">
 							<h2>Hi, I'm Subhajit <span class="wave">👋🏻</span></h2>
- 							<p style="text-align: justify;">I am a results-oriented <b>AWS Data Engineer</b> with over <b>3.9 years</b> of experience in architecting and maintaining high-performance data pipelines. My expertise lies in leveraging the AWS ecosystem—specifically <b>S3, Glue, EMR, Redshift, and Athena</b>—to orchestrate seamless, large-scale data transformations.</p>
- 							<p style="text-align: justify;">Holding a B.Tech in Computer Science from <b>MAKAUT</b> and being a certified <b>AWS Cloud Practitioner</b>, I am committed to engineering scalable data solutions that ensure data integrity and empower stakeholders with high-impact insights. I am passionate about solving complex challenges at the intersection of performance, scalability, and data reliability.</p>
+							<p style="text-align: justify;">I am an <b>AWS Data Engineer</b> with approximately <b>4 years of experience</b> building reliable, production-scale ETL/ELT pipelines and distributed data systems.</p>
+							<p style="text-align: justify;">I work with <b>S3, Glue (PySpark), EMR, Redshift, and Athena</b> to design scalable data platforms that support batch and near real-time processing. I have built pipelines handling <b>50–100 GB/day</b>, with a focus on clean data modeling, incremental processing (CDC/SCD), and query optimization.</p>
+							<p style="text-align: justify;">My work emphasizes scalability, data integrity, and cost-efficient processing — with end-to-end ownership across ingestion, transformation, orchestration, monitoring, and CI/CD — ensuring stable and reliable data delivery in production.</p>
 						</div>
 						<div class="row main-content-element justify-content-center" id="experience">
 							<h1>Experience</h1>
@@ -197,22 +198,28 @@
 									<div class="col-12 info-container">
 										<div class="row">
 											<div class="col company-name"><h4>AWS Serverless Analytics ETL Pipeline</h4></div>
-											<div class="col-4"><h5>AWS S3, Glue, Athena</h5></div>
+											<div class="col-4"><h5>AWS S3 · Glue · Athena</h5></div>
 										</div>
-										<li>Designed a fully serverless batch ETL pipeline using Amazon S3, AWS Glue (PySpark), and Crawlers.</li>
-										<li>Built a scalable data lake architecture with raw and curated layers (medallion-style).</li>
-										<li>Enabled serverless, cost-efficient analytics by integrating the Data Catalog with Athena and QuickSight.</li>
+										<p class="project-summary">Designed and built a fully serverless ETL pipeline on AWS for batch data processing.</p>
+										<li>Built a scalable data lake on S3 using medallion architecture (raw → curated layers).</li>
+										<li>Implemented data transformations using AWS Glue (PySpark) for structured analytics datasets.</li>
+										<li>Automated schema discovery with Glue Crawlers across JSON, CSV, and Parquet formats.</li>
+										<li>Enabled cost-efficient querying via Athena using partitioned datasets and optimized storage.</li>
+										<p class="project-result">→ Result: Delivered analytics-ready datasets with reduced query cost and improved performance.</p>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col info-container last-container">
 										<div class="row">
 											<div class="col company-name"><h4>AWS Near-Real-Time Serverless ELT</h4></div>
-											<div class="col-4"><h5>AWS, Snowflake</h5></div>
+											<div class="col-4"><h5>AWS · Snowflake</h5></div>
 										</div>
-										<li>Built an event-driven ELT pipeline using EventBridge, DynamoDB, Lambda, S3, and Snowflake.</li>
-										<li>Implemented Snowflake Snowpipe for continuous, automated data ingestion from S3.</li>
-										<li>Applied ELT best practices by performing analytical transformations using Snowflake SQL.</li>
+										<p class="project-summary">Built an event-driven ELT pipeline for near real-time data ingestion and processing.</p>
+										<li>Designed ingestion flow using EventBridge, DynamoDB Streams, Lambda, and S3.</li>
+										<li>Enabled continuous data loading into Snowflake using Snowpipe.</li>
+										<li>Applied ELT approach with transformations performed using Snowflake SQL.</li>
+										<li>Handled semi-structured JSON data for scalable downstream analytics.</li>
+										<p class="project-result">→ Result: Enabled near real-time data availability with minimal operational overhead.</p>
 									</div>
 								</div>
 							</div>
