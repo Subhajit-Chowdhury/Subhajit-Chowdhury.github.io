@@ -284,21 +284,22 @@ a:hover{
 	border-bottom: 1px solid #dcd9d9;
 }
 
-/* Justify bullet points in experience / education */
-.info-container li {
-	text-align: justify;
-	padding-right: 0.5rem;
+/* Shared bullet list style across all sections */
+.section-list {
+	padding-left: 1.4rem;    /* controls bullet indent */
+	margin: 6px 0 4px 0;
 }
 
-/* Projects: no logo column, so indent content to match
-   the ~col-lg-2 (16.67%) offset used in other sections */
+.section-list li {
+	text-align: justify;
+	padding-right: 0.4rem;   /* keeps right edge clean */
+	margin-bottom: 4px;
+	line-height: 1.6;
+}
+
+/* Projects: offset content to align with logo-col start */
 #projects .info-container {
 	padding-left: 1.5rem;
-}
-
-#projects .info-container li {
-	text-align: justify;
-	padding-right: 0.5rem;
 }
 
 .last-container{
@@ -453,19 +454,6 @@ a:hover{
 #achievements {
 }
 
-#achievements .content-box .logo-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	min-height: 7rem;
-	margin-top: 0;
-}
-
-#achievements .content-box .row {
-	align-items: center;
-} 
-
 #achievements .container{
 	width: 80%;
 }
@@ -478,6 +466,13 @@ a:hover{
 }
 .achievement-content{
 	text-align: left;
+}
+
+.cert-validation {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 0.92rem;
+	color: #555;
 }
 
 /* ── PROJECT CARDS ───────────────────────────────────── */
