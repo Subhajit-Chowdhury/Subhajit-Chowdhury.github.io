@@ -415,22 +415,38 @@ a:hover{
 .contact-icon a{
 	font-size: 2rem;
 	color: black;
-	transition-duration: 0.5s;
+	transition: all 0.4s ease;
+	display: inline-block;
 }
 
 .contact-icon a:hover{
 	transform: scale(1.15);
-	color: #0077b5;
+}
+
+/* Specific brand colors on hover */
+.contact-icon a:hover .fa-envelope {
+	color: #D44638;
+}
+.contact-icon a:hover .fa-linkedin {
+	color: #0077b5; /* LinkedIn Blue */
+}
+.contact-icon a:hover .fa-github {
+	color: #6e5494; /* GitHub Purple */
+}
+.contact-icon a:hover .fa-medium {
+	color: #00ab6c; /* Medium Green */
 }
 
 #resume-icon{
 	width: 35px;
 	margin-top: -10px;
-	transition-duration: 0.5s;
+	transition: all 0.4s ease;
 }
 
 #resume-icon:hover{
-	transform: scale(1.1);
+	transform: scale(1.15);
+	/* Approx #f9873b Theme Orange */
+	filter: invert(56%) sepia(88%) saturate(415%) hue-rotate(342deg) brightness(101%) contrast(97%);
 }
 
 #resume-button{
